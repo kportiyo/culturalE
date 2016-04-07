@@ -17,11 +17,14 @@ class secondViewController: UIViewController
     {
         
         super.viewDidLoad()
-    
+    label1.hidden = true
     }
     
+
     @IBAction func helloButton(sender: UIButton)
     {
+        label1.hidden = false
+        
         UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.label1.alpha = 2.0
             }, completion: nil)
@@ -29,6 +32,9 @@ class secondViewController: UIViewController
         UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.label1.alpha = 0.0
             }, completion: nil)
+        
+        
+
 
         }
    
