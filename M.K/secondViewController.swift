@@ -30,9 +30,7 @@ class secondViewController: UIViewController
             self.label1.alpha = 0.0
             }, completion: nil)
 
-        }
-   
-    
+    }
     
 }
 
