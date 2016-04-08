@@ -13,15 +13,22 @@ class secondViewController: UIViewController
     
     @IBOutlet weak var label1: UILabel!
     
+    @IBOutlet weak var label2: UILabel!
+    
     override func viewDidLoad()
     {
         
         super.viewDidLoad()
-    
+    label1.hidden = true
+    label2.hidden = true
+        
     }
     
+
     @IBAction func helloButton(sender: UIButton)
     {
+        label1.hidden = false
+        
         UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.label1.alpha = 2.0
             }, completion: nil)
