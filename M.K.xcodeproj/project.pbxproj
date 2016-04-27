@@ -17,6 +17,10 @@
 		3FBD9F9C1CB2CE5B000C28B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBD9F9A1CB2CE5B000C28B7 /* LaunchScreen.storyboard */; };
 		3FBD9FA71CB2CE5B000C28B7 /* M_KTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD9FA61CB2CE5B000C28B7 /* M_KTests.swift */; };
 		3FBD9FB21CB2CE5B000C28B7 /* M_KUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBD9FB11CB2CE5B000C28B7 /* M_KUITests.swift */; };
+		3FF194151CBEAA84003E3E9D /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF194141CBEAA84003E3E9D /* SixthViewController.swift */; };
+		3FF194171CBEAA94003E3E9D /* seventhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF194161CBEAA94003E3E9D /* seventhViewController.swift */; };
+		3FF194191CBEAAA4003E3E9D /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF194181CBEAAA4003E3E9D /* EighthViewController.swift */; };
+		3FF1941B1CBEAAAE003E3E9D /* ninthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1941A1CBEAAAE003E3E9D /* ninthViewController.swift */; };
 		3FFF58BF1CB567770072AC11 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF58BE1CB567770072AC11 /* secondViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +58,10 @@
 		3FBD9FAD1CB2CE5B000C28B7 /* M.KUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M.KUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBD9FB11CB2CE5B000C28B7 /* M_KUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_KUITests.swift; sourceTree = "<group>"; };
 		3FBD9FB31CB2CE5B000C28B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF194141CBEAA84003E3E9D /* SixthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
+		3FF194161CBEAA94003E3E9D /* seventhViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = seventhViewController.swift; sourceTree = "<group>"; };
+		3FF194181CBEAAA4003E3E9D /* EighthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
+		3FF1941A1CBEAAAE003E3E9D /* ninthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ninthViewController.swift; sourceTree = "<group>"; };
 		3FFF58BE1CB567770072AC11 /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +119,10 @@
 				3F2C912C1CB81086007365AD /* ThirdViewController.swift */,
 				3F2C912E1CB812AE007365AD /* FourthViewController.swift */,
 				3F2C91301CB81491007365AD /* FifthViewController.swift */,
+				3FF194141CBEAA84003E3E9D /* SixthViewController.swift */,
+				3FF194161CBEAA94003E3E9D /* seventhViewController.swift */,
+				3FF194181CBEAAA4003E3E9D /* EighthViewController.swift */,
+				3FF1941A1CBEAAAE003E3E9D /* ninthViewController.swift */,
 				3FBD9F951CB2CE5B000C28B7 /* Main.storyboard */,
 				3FBD9F981CB2CE5B000C28B7 /* Assets.xcassets */,
 				3FBD9F9A1CB2CE5B000C28B7 /* LaunchScreen.storyboard */,
@@ -269,11 +281,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2C91311CB81491007365AD /* FifthViewController.swift in Sources */,
+				3FF194151CBEAA84003E3E9D /* SixthViewController.swift in Sources */,
+				3FF194171CBEAA94003E3E9D /* seventhViewController.swift in Sources */,
 				3FBD9F941CB2CE5B000C28B7 /* ViewController.swift in Sources */,
+				3FF1941B1CBEAAAE003E3E9D /* ninthViewController.swift in Sources */,
 				3FFF58BF1CB567770072AC11 /* secondViewController.swift in Sources */,
 				3F2C912D1CB81086007365AD /* ThirdViewController.swift in Sources */,
 				3FBD9F921CB2CE5B000C28B7 /* AppDelegate.swift in Sources */,
 				3F2C912F1CB812AE007365AD /* FourthViewController.swift in Sources */,
+				3FF194191CBEAAA4003E3E9D /* EighthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

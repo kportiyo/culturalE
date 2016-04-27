@@ -11,6 +11,7 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
 {
     
     @IBOutlet weak var myPickerView: UIPickerView!
+    @IBOutlet weak var myButtonGo: UIButton!
     
     var pickerData = ["North America", "South America", "Africa", "Europe", "Asia", "Australia", "Antartica"]
     
@@ -19,7 +20,9 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         super.viewDidLoad()
         self.myPickerView.dataSource = self
         self.myPickerView.delegate = self
+        myButtonGo.hidden = true
     }
+
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
     {
@@ -38,6 +41,46 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     
     
+    @IBAction func goButtonAction(sender: AnyObject)
+    {
+        
+    }
+    
+    
+    
+    
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        if(row == 0)
+        {
+            myButtonGo.hidden = false
+        }
+        else if(row == 1)
+        {
+            myButtonGo.hidden = false
+        }
+        else if(row == 2)
+        {
+            myButtonGo.hidden = false
+        }
+        else if(row == 3)
+        {
+            myButtonGo.hidden = false
+        }
+        else if(row == 4)
+        {
+            myButtonGo.hidden = false
+        }
+        else if (row == 5)
+        {
+            myButtonGo.hidden = false
+        }
+        else if (row == 6)
+        {
+            myButtonGo.hidden = false
+        }
+    }
 }
     
     

@@ -8,12 +8,7 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var button2Outlet: UIButton!
     @IBOutlet weak var button3Outlet: UIButton!
     
-    
-    
-    
-    
-    var pickerDataNorthAmerica = ["New York, United States", "Banff and Lake Louise, Canada", "Cabo, San Lucas, Mexico", "Cancun, Mexico", "Niagara falls", "Canada/United States"]
-    
+   var pickerDataNorthAmerica = ["Canada","United States", "Mexico"]
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -36,73 +31,13 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return pickerDataNorthAmerica[row]
     }
     
-    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         if(row == 0)
         {
-            button1Outlet.hidden = false
-            button2Outlet.hidden = false
-            button3Outlet.hidden = false
+            
         }
-        else if(row == 1)
-        {
-            button1Outlet.hidden = false
-            button2Outlet.hidden = false
-            button3Outlet.hidden = false
-        }
-        else if(row == 2)
-        {
-            button1Outlet.hidden = false
-            button2Outlet.hidden = false
-            button3Outlet.hidden = false
-        }
-        else if(row == 3)
-        {
-            button1Outlet.hidden = false
-            button2Outlet.hidden = false
-            button3Outlet.hidden = false
-        }
-        else if(row == 4)
-        {
-            button1Outlet.hidden = false
-            button2Outlet.hidden = false
-            button3Outlet.hidden = false
-        }
-        else if(row == 5)
-        {
-            button1Outlet.hidden = false
-            button2Outlet.hidden = false
-            button3Outlet.hidden = false
-        }
-        
-    }
     
-    @IBAction func button1Action(sender: AnyObject)
-    {
-        
     }
-    
 
-    @IBAction func button2Action(sender: AnyObject)
-    {
-        
-    }
-    
-    
-    @IBAction func button3Action(sender: AnyObject)
-    {
-        
-    }
-    
-    
 }
-
-
-
-
-
-
-
-
-
