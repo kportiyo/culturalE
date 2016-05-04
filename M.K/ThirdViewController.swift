@@ -22,7 +22,6 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
         self.myPickerView.delegate = self
         myButtonGo.hidden = true
     }
-
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
     {
@@ -45,9 +44,6 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     {
         
     }
-    
-    
-    
     
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
