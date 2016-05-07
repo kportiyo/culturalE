@@ -21,6 +21,7 @@ class secondViewController: UIViewController
     @IBOutlet weak var label8: UILabel!
     @IBOutlet weak var label9: UILabel!
     @IBOutlet weak var label10: UILabel!
+    @IBOutlet weak var welcomeButton: UIButton!
     
     override func viewDidLoad()
     {
@@ -36,9 +37,12 @@ class secondViewController: UIViewController
     label8.hidden = true
     label9.hidden = true
     label10.hidden = true
+      
+   
     }
     
 
+    
     @IBAction func helloButton(sender: UIButton)
     {
         label1.hidden = false
@@ -51,6 +55,7 @@ class secondViewController: UIViewController
         label8.hidden = false
         label9.hidden = false
         label10.hidden = false
+         welcomeButton.hidden = true
         
         UIView.animateWithDuration(1.0, delay: 1.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
             self.label1.alpha = 2.0
@@ -132,6 +137,8 @@ class secondViewController: UIViewController
         UIView.animateWithDuration(1.0, delay: 5.5, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             self.label10.alpha = 0.0
             }, completion: nil)
+        welcomeButton.hidden = false
+   
         
         
         }

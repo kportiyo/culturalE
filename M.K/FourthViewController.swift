@@ -4,17 +4,29 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
 {
     
     @IBOutlet weak var myPickerViewNorthAmerica: UIPickerView!
-    @IBOutlet weak var button1Outlet: UIButton!
-    @IBOutlet weak var button2Outlet: UIButton!
-    @IBOutlet weak var button3Outlet: UIButton!
     
    var pickerDataNorthAmerica = ["Canada","United States", "Mexico"]
+    
+    @IBOutlet weak var buttonGoCA: UIButton!
+    
+    @IBOutlet weak var buttonGoUS: UIButton!
+    
+    
+    @IBOutlet weak var buttonGoMX: UIButton!
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.myPickerViewNorthAmerica.dataSource = self
         self.myPickerViewNorthAmerica.delegate = self
+        buttonGoCA.hidden = false
+        buttonGoUS.hidden = true
+        buttonGoMX.hidden = true
+        
     }
+    
+    
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
     {
@@ -35,7 +47,21 @@ class FourthViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     {
         if(row == 0)
         {
-            
+            buttonGoCA.hidden = false
+            buttonGoUS.hidden = true
+            buttonGoMX.hidden = true
+        }
+        if(row == 1)
+        {
+            buttonGoCA.hidden = true
+            buttonGoUS.hidden = false
+            buttonGoMX.hidden = true
+        }
+        if(row == 2)
+        {
+            buttonGoCA.hidden = true
+            buttonGoUS.hidden = true
+            buttonGoMX.hidden = false
         }
     
     }

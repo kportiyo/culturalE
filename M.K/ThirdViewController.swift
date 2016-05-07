@@ -11,16 +11,36 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
 {
     
     @IBOutlet weak var myPickerView: UIPickerView!
-    @IBOutlet weak var myButtonGo: UIButton!
+    @IBOutlet weak var myButtonGo1: UIButton!
     
-    var pickerData = ["North America", "South America", "Africa", "Europe", "Asia", "Australia", "Antartica"]
+    @IBOutlet weak var myButtonGoSA: UIButton!
+    
+    @IBOutlet weak var myButtonGoAF: UIButton!
+    
+    @IBOutlet weak var myButtonGoEU: UIButton!
+    
+    @IBOutlet weak var myButtonGoAS: UIButton!
+    
+    @IBOutlet weak var myButtonGoAUS: UIButton!
+    
+    
+    
+    
+    
+    var pickerData = ["North America", "South America", "Africa", "Europe", "Asia", "Australia"]
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.myPickerView.dataSource = self
         self.myPickerView.delegate = self
-        myButtonGo.hidden = true
+        myButtonGo1.hidden = false
+        myButtonGo1.hidden = true
+        myButtonGoAF.hidden = true
+        myButtonGoAS.hidden = true
+        myButtonGoEU.hidden = true
+        myButtonGoSA.hidden = true
+        myButtonGoAUS.hidden = true
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
@@ -40,41 +60,62 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     
     
-    @IBAction func goButtonAction(sender: AnyObject)
-    {
-        
-    }
-    
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         if(row == 0)
         {
-            myButtonGo.hidden = false
+            myButtonGo1.hidden = false
+            myButtonGoAF.hidden = true
+            myButtonGoAS.hidden = true
+            myButtonGoEU.hidden = true
+            myButtonGoSA.hidden = true
+            myButtonGoAUS.hidden = true
         }
         else if(row == 1)
         {
-            myButtonGo.hidden = false
+            myButtonGo1.hidden = true
+            myButtonGoAF.hidden = true
+            myButtonGoAS.hidden = true
+            myButtonGoEU.hidden = true
+            myButtonGoSA.hidden = false
+            myButtonGoAUS.hidden = true
         }
         else if(row == 2)
         {
-            myButtonGo.hidden = false
+            myButtonGo1.hidden = true
+            myButtonGoAF.hidden = false
+            myButtonGoAS.hidden = true
+            myButtonGoEU.hidden = true
+            myButtonGoSA.hidden = true
+            myButtonGoAUS.hidden = true
         }
         else if(row == 3)
         {
-            myButtonGo.hidden = false
+            myButtonGo1.hidden = true
+            myButtonGoAF.hidden = true
+            myButtonGoAS.hidden = true
+            myButtonGoEU.hidden = false
+            myButtonGoSA.hidden = true
+            myButtonGoAUS.hidden = true
         }
         else if(row == 4)
         {
-            myButtonGo.hidden = false
+            myButtonGo1.hidden = true
+            myButtonGoAF.hidden = true
+            myButtonGoAS.hidden = false
+            myButtonGoEU.hidden = true
+            myButtonGoSA.hidden = true
+            myButtonGoAUS.hidden = true
         }
         else if (row == 5)
         {
-            myButtonGo.hidden = false
-        }
-        else if (row == 6)
-        {
-            myButtonGo.hidden = false
+            myButtonGo1.hidden = true
+            myButtonGoAF.hidden = true
+            myButtonGoAS.hidden = true
+            myButtonGoEU.hidden = true
+            myButtonGoSA.hidden = true
+            myButtonGoAUS.hidden = false
         }
     }
 }
