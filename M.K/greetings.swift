@@ -10,10 +10,8 @@ import UIKit
 
 class greetings: UITabBarController
 {
-
-
-    
-    
-    
-    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+    }
 }
